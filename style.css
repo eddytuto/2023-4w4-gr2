@@ -1,0 +1,25 @@
+
+/*
+Theme Name: 4w4-eddy-martin
+Theme URI: https://github.com/eddytuto
+Author: Eddy Martin
+Author URI: https://referenced.ca
+Description: Développement d'un thème de base dans le cadre du cours 4w4
+Version: 1.0
+Requires at least: 6.0
+Tested up to: 6.1.1
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 4w4-eddy-martin
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+    background-color: beige;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
