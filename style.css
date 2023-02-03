@@ -372,4 +372,24 @@ p {
   font-family: "Times New Roman", Times, serif;
 }
 
-/* --------------------------------------------- composant *//*# sourceMappingURL=style.css.map */
+a {
+  color: rgb(76, 88, 135);
+}
+a:visited {
+  color: rgb(76, 135, 104);
+}
+a:hover {
+  color: rgb(211, 28, 28);
+}
+
+/* --------------------------------------------- composant */
+.site__footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site__footer section {
+  border: 1px solid #aaa;
+  flex: 1 1 200px;
+}/*# sourceMappingURL=style.css.map */
