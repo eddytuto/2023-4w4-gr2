@@ -10,7 +10,7 @@
 - Cette branche contient un minimum de 5 commits
 - Chaque commit est commenté de façon spécifique avec le préfixe (s2c2 ou s3c1 ou s3c2)
 
-### Le site est déplyoé sur le serveur distant Siteground
+### Le site est déployé sur le serveur distant Siteground
 - Vous recevrez une invitation par courriel sur votre adresse « cmaisonneuve.qc.ca »
 
 ### Barème sur 5 points
