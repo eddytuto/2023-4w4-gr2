@@ -392,4 +392,23 @@ a:hover {
 .site__footer section {
   border: 1px solid #aaa;
   flex: 1 1 200px;
+}
+
+.site__header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-entete-container .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+.menu-entete-container .menu .menu-item {
+  color: rgb(0, 42, 85);
+}
+.menu-entete-container .menu .menu-item a {
+  display: block;
+  padding: 5px 20px;
 }/*# sourceMappingURL=style.css.map */
