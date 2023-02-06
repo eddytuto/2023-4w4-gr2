@@ -1,0 +1,24 @@
+.site__header {}
+
+.site__header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu-entete-container { // nav
+
+    .menu{ // ul
+        display : flex;
+        list-style-type: none;
+        justify-content: flex-end;
+        .menu-item { //li
+            color : rgb(0, 42, 85);
+            a {
+            display : block;
+            padding : 5px 20px;
+            }
+        }
+    }
+    }
