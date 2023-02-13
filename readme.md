@@ -1,11 +1,13 @@
-# Laboratoire 1
+# Exercice #1
 ## 4w4 - Conception d'interface et développement Web
 ### Auteur: Eddy Martin
 #### Description
-- Installation local de Wordpress
-- Création d'un thème simple
-- Création d'un dépôt git local
-- Création d'un dépôt github 
+- Installation sur un serveur distant « siteground.com »
+- Développer les modules suivants:
+> header.php, front-page.php
+- Création de la branche exer1 
+- Compléter la codification sass
+- Améliorer le design global
 
 #### Références
 - https://eddytuto.ca/
