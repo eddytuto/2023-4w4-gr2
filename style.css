@@ -418,4 +418,15 @@ a:hover {
 .menu-entete-container .menu .menu-item a {
   display: block;
   padding: 5px 20px;
+}
+
+.blocflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blocflex article {
+  flex: 1 0 200px;
+  border: 1px solid #aaa;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
