@@ -420,13 +420,26 @@ a:hover {
   padding: 5px 20px;
 }
 
+/*
 .blocflex {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    display : flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    article {
+        flex: 1 0 200px;
+        border : 1px solid #aaa;
+        padding : 10px;
+    }
+}
+*/
+.blocflex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
 }
 .blocflex article {
-  flex: 1 0 200px;
   border: 1px solid #aaa;
-  padding: 10px;
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */
