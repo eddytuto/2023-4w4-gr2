@@ -388,6 +388,22 @@ a:hover {
   color: rgb(211, 28, 28);
 }
 
+/* Les balise qu'on utilse dans la conversion des fichiers markdown */
+/* Liste */
+ul {
+  list-style-type: none;
+}
+
+/*
+li::before {
+    content: "»";
+    background: lightgray;
+    border-radius: 1ch;
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+  }
+*/
+/* ----------------------------  pre */
 /* --------------------------------------------- composant */
 .site__footer {
   display: flex;
@@ -406,11 +422,17 @@ a:hover {
   align-items: center;
 }
 
+.logomenu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 /* -------------------------------------------------- menu-enetete */
 .menu-entete-container .menu {
   display: flex;
   list-style-type: none;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .menu-entete-container .menu .menu-item {
   color: rgb(0, 42, 85);
