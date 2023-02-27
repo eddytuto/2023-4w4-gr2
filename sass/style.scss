@@ -24,9 +24,12 @@ Text Domain: 2023-4w4
 @import "base/heading";
 // @import "base/espacement";
 @import "base/link";
+@import "base/markdown";
 // @import "base/list";
 
 /* --------------------------------------------- composant */
 @import "composant/pied_page";
 @import "composant/site_entete";
 @import "composant/bloc_flex";
+/* --------------------------------------------- layout */
+@import "layout/aside-contenu";
