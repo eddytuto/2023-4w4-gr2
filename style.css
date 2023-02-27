@@ -398,9 +398,9 @@ ul {
 li::before {
     content: "»";
     background: lightgray;
-    border-radius: 1ch;
-    padding-inline: 1ch;
-    margin-inline-end: 1ch;
+    border-radius: 1rem;
+    padding-inline: 1rem;
+    margin-inline-end: 1rem;
   }
 */
 /* ----------------------------  pre */
@@ -464,4 +464,42 @@ li::before {
 .blocflex article {
   border: 1px solid #aaa;
   padding: 1rem;
+}
+
+/* --------------------------------------------- layout */
+/**
+*  Mise en page général avec display:grid
+*/
+.site__header {
+  grid-area: header;
+  padding: 1rem clamp(1rem, 3vw, 20rem);
+  background-color: antiquewhite;
+}
+
+.site__main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: antiquewhite;
+}
+
+.site__aside {
+  grid-area: aside;
+  background-color: rgb(103, 236, 178);
+}
+
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "aside" "main" "footer";
+  background-color: rgb(121, 205, 235);
+}
+@media screen and (min-width: 1000px) {
+  .site {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "aside main" "footer footer";
+  }
 }/*# sourceMappingURL=style.css.map */
