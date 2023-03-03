@@ -442,28 +442,43 @@ li::before {
   padding: 5px 20px;
 }
 
-/*
 .blocflex {
-    display : flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    article {
-        flex: 1 0 200px;
-        border : 1px solid #aaa;
-        padding : 10px;
-    }
-}
-*/
-.blocflex {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .blocflex article {
+  flex: 1 0 200px;
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+
+/*
+.blocflex {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    // Cette déclaration sera meilleur quand min() sera mieux supporté
+    // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+    gap: 2rem;
+    margin: 2rem;
+  }
+*/
+.blocflex__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   border: 1px solid #aaa;
   padding: 1rem;
+}
+.blocflex__article h3, .blocflex__article h5, .blocflex__article h6, .blocflex__article p {
+  margin: 0;
+  padding: 0;
+}
+
+.blocflex__galerie {
+  flex: 1 0 100%;
 }
 
 /* --------------------------------------------- layout */

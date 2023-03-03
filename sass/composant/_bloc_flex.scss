@@ -1,4 +1,4 @@
-/*
+
 .blocflex {
     display : flex;
     justify-content: space-between;
@@ -10,8 +10,8 @@
         padding : 10px;
     }
 }
-*/
 
+/*
 .blocflex {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -19,12 +19,23 @@
     // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
     gap: 2rem;
     margin: 2rem;
-  
-    article {
-      border: 1px solid #aaa;
-      padding: 1rem;
-    }
   }
+*/
 
+.blocflex__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #aaa;
+  padding: 1rem;
+  h3,h5,h6,p {
+    margin:0;
+    padding:0;
+  }
+}
 
-
+.blocflex__galerie {
+   flex: 1 0 100%;
+}
