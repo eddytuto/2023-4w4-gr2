@@ -22,4 +22,9 @@
     <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
     <h2><?= bloginfo('description') ?></h2>
    </header>
-    <?php get_template_part("template-parts/aside"); ?>
+
+    <?php 
+    if ( ! is_front_page()){
+    get_template_part("template-parts/aside"); 
+    }
+    ?>

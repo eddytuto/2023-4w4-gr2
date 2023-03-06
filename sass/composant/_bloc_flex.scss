@@ -3,12 +3,6 @@
     display : flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-    article {
-        flex: 1 0 200px;
-        border : 1px solid #aaa;
-        padding : 10px;
-    }
 }
 
 /*
@@ -24,6 +18,7 @@
 
 .blocflex__article {
   display: flex;
+  flex : 1 0 300px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
