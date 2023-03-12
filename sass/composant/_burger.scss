@@ -1,0 +1,14 @@
+/* ------------------------------------------ Bouton burger */
+.burger {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    @media screen and (min-width : $largeur__tablette) {
+       display :none; 
+    }
+}
+
+#chkMenu {
+    display : none;
+}

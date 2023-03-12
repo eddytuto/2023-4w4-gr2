@@ -1,3 +1,5 @@
+/* --------------------------------------------------- Entete de la page */
+
 .site__header {}
 
 .site__header__logo {
@@ -6,25 +8,60 @@
     align-items: center;
 }
 
-.logomenu {
+
+.menu__recherche {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    justify-content: center;;
+    @media screen and (min-width: $largeur__bureau) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+    }
 }
 
 /* -------------------------------------------------- menu-enetete */
+#chkMenu:checked ~ .menu-entete-container  {
+    transform: translateX(0);
+}
+
 .menu-entete-container { // nav
+    transform : translateX(300px);
+    transition : transform .5s;
+    @media screen and (min-width:$largeur__tablette) {
+        transform : translateX(0);
+    }
 
     .menu{ // ul
         display : flex;
+        flex-direction: column; 
         list-style-type: none;
+        align-items: flex-end;
         justify-content: flex-start;
+        @media screen and (min-width : $largeur__tablette ){
+           flex-direction: row; 
+           align-items: center;
+           justify-content: flex-end;
+
+        }
         .menu-item { //li
             color : rgb(0, 42, 85);
             a {
             display : block;
             padding : 5px 20px;
+            white-space: nowrap;
             }
         }
     }
+    }
+
+
+    /* //////////////////////////////////////////// Zone de recherche */
+
+    .recherche {
+        display : flex;
+        flex-wrap: nowrap;
     }
